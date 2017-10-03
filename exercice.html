@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthieu Le Dévéhat - Exercice</title>
+    <link style="relsheet" href="style.css">
+</head>
+
+<body>
+   <form>
+        <input type="text" name="nom" placeholder="Pseudo" id="name">
+        <input type="password" name="password" placeholder="Mot de passe" id="password">
+        <input type="submit" id="button">
+   </form>
+
+    <script>
+    	(function (){
+			var name = document.getElementById('name');
+			var password = document.getElementById('password');
+			var button = document.getElementById('button');
+
+			button.addEventListener('click', function(){
+				if(name.value == "" || password.value == ""){
+					alert('Veuillez rentrer les information requise');
+				}
+			})
+		})();
+    </script>
+
+</body>
+
+</html>
